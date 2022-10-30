@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <style>
+
+        .b {
+            background-color: purple;
+            color: whitesmoke;
+            padding: 15px 35px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .t {
+            font-size: 28px;
+            background-image: linear-gradient(to right, white, rgb(80, 78, 81));
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            font-style: italic;
+            padding: 13px;
+            border-radius: 10px;
+        }
+
+        body {
+            text-align: center;
+            background-color:linen;
+            justify-content: center;
+        }
+
+        .tab {
+            background-color: rgb(6, 6, 6);
+            padding: 10px;
+            border-radius: 10px;
+            border-width: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 120px;
+
+        }
+
+        .s {
+            color: whitesmoke;
+            padding: 15px 35px;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 10px;
+            background-color: deeppink;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .c {
+            color: whitesmoke;
+            padding: 15px 35px;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 10px;
+            background-color: deeppink;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .main-head {
+            margin: 15px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size:65px;
+        }
+    </style>
+    <script>
+        function ac() {
+            document.getElementById("res").value = " "
+        }
+        function show(input) {
+            document.getElementById("res").value += input;
+        }
+        function cal() {
+            var output = eval(document.getElementById("res").value);
+            document.getElementById("res").value = output;
+        }
+    </script>
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+    <div>
+        <h1 class="main-head">CALCULATOR</h1>
+
+    </div>
+
+    <table cellspacing="3px" cellpadding="3px" class="tab">
+        <tr>
+            <td colspan="3" align="center" border="5">
+                <input type="text" class="t" id="res">
+            </td>
+            <td align="center"><button class="c" onclick="ac()">C</button></td>
+        </tr>
+        <tr>
+            <td align="center"><button class="b" onclick="show('1')">1</button></td>
+            <td align="center"><button class="b" onclick="show('2')">2</button></td>
+            <td align="center"><button class="b" onclick="show('3')">3</button></td>
+            <td align="center"><button class="b" onclick="show('+')">+</button></td>
+        </tr>
+        <tr>
+            <td align="center"><button class="b" onclick="show('4')">4</button></td>
+            <td align="center"><button class="b" onclick="show('5')">5</button></td>
+            <td align="center"><button class="b" onclick="show('6')">6</button></td>
+            <td align="center"><button class="b" onclick="show('-')">-</button></td>
+        </tr>
+        <tr>
+            <td align="center"><button class="b" onclick="show('7')">7</button></td>
+            <td align="center"><button class="b" onclick="show('8')">8</button></td>
+            <td align="center"><button class="b" onclick="show('9')">9</button></td>
+            <td align="center"><button class="b" onclick="show('*')">*</button></td>
+        </tr>
+        <tr>
+            <td align="center"><button class="b" onclick="show('0')">0</button></td>
+            <td align="center"><button class="b" onclick="show('.')">.</button></td>
+            <td align="center"><button class="b" onclick="show('/')">/</button></td>
+            <td align="center"><button class="s" onclick="cal()">=</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>
